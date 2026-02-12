@@ -195,7 +195,7 @@ void TaskLoRa(void *pvParameters) {
       json += "\"help\":" + String(localCopy.help) + ",";
       json += "\"motion\":" + String(localCopy.motion) + ",";
       json += "\"lat\":" + String(localCopy.lat,6) + ",";
-      json += "\"lng\":" + String(localCopy.lng,6) + ",";
+      json += "\"lng\":" + String(localCopy.lng,6);
       json += "}";
 
       LoRa.beginPacket();
